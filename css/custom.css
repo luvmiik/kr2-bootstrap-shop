@@ -1,16 +1,63 @@
+:root {
+  --bs-primary: #c1121f;
+  --bs-primary-rgb: 193, 18, 31;
+  --bs-link-color: #c1121f;
+  --bs-link-color-rgb: 193, 18, 31;
+  --bs-link-hover-color: #9b0e19;
+  --bs-link-hover-color-rgb: 155, 14, 25;
+}
+
+.btn-primary {
+  --bs-btn-bg: #c1121f;
+  --bs-btn-border-color: #c1121f;
+  --bs-btn-hover-bg: #9b0e19;
+  --bs-btn-hover-border-color: #9b0e19;
+  --bs-btn-active-bg: #9b0e19;
+  --bs-btn-active-border-color: #9b0e19;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #c1121f;
+  --bs-btn-border-color: #c1121f;
+  --bs-btn-hover-bg: #c1121f;
+  --bs-btn-hover-border-color: #c1121f;
+  --bs-btn-active-bg: #c1121f;
+  --bs-btn-active-border-color: #c1121f;
+}
+
 body {
   min-height: 100vh;
 }
 
-.placeholder-box {
-  min-height: 240px;
-}
-
-.placeholder-image {
-  min-height: 320px;
-}
-
 .card-img-top {
-  height: 180px;
-  object-fit: cover;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.hero-img {
+  height: 320px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+:focus-visible {
+  outline: 3px solid #f0ad4e;
+  outline-offset: 2px;
+}
+
+.why-card {
+  background-color: #fff;
+  border: 3px solid #c1121f;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.why-card:hover {
+  border-color: #000;
+  transform: translateY(-4px);
 }
